@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #222;
+    color: #ffff;
+}
+
+.head h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+
+.start-Stop {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: #411E53;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.card #startColor{
+    border:none;
+    height: 50px;
+    width: 150px;
+    background-color: #10B981;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.card #stopColor{
+    border:none;
+    height: 50px;
+    width: 150px;
+    background-color: #C95B78;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.card #startColor:hover{
+    background-color: #0fa775;
+}
+.card #stopColor:hover{
+    background-color: #b05069;
+}
+
+#button{
+    display: flex;
+    gap: 30px;
+}
+
+.reponse h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reponse h2 span {
+    color: #C95B78;
+    text-align: center;
+}
+
+.reponse p{
+    text-align: center;
+    color: grey;
+}
