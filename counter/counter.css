@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+   background-color: #F1F5F9;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: #FFFFFF;
+    height: 30%;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.display {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.display h3{
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 600;
+}
+
+.count .decrease{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #FFF1F2;
+    color: #E11D48;
+}
+.count .increase{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #ECFDF5;
+    color: #E11D48;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons #reset{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F1F5F9;
+    color: grey;
+    font-weight: 600;
+}
+
+.display h1{
+    font-size: 40px;
+}
+
+.count .decrease:hover{
+    background-color: #ffe4e6;
+}
+.count .increase:hover{
+    background-color: #d1fae5;
+}
+
+.buttons #reset:hover{
+    background-color:  #e2e8f0;
+}
