@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BMI.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="upper">
+
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <circle cx="12" cy="5" r="3" />
+
+                    <path d="M6.5 8a2 2 0 0 0-1.905 1.46L2.1 18.5A2 2 0 0 0 4 21h16a2 2 0 0 0 1.925-2.54L19.4 9.5A2 2 0 0 0 17.48 8Z" />
+
+                </svg>
+            </div>
+
+            <div class="bmi">
+                <h1>BMI Calculator</h1>
+
+                <p>
+                    Enter your height and weight to calculate
+                    your body mass index.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="lower">
+
+            <form action="#" method="post">
+
+                <!-- Height -->
+
+                <div class="length">
+
+                    <label for="height">
+                        Height
+                    </label>
+
+                    <input
+                        type="number"
+                        class="height"
+                        placeholder="e.g 175"
+                    >
+
+                    <small class="height-error"></small>
+
+                </div>
+
+
+                <!-- Weight -->
+
+                <div class="weight">
+
+                    <label for="weig">
+                        Weight
+                    </label>
+
+                    <input
+                        type="number"
+                        class="weig"
+                        placeholder="e.g 70"
+                    >
+
+                    <small class="weight-error"></small>
+
+                </div>
+
+
+                <!-- Buttons -->
+
+                <div class="button">
+
+                    <button type="submit" class="calculate-bmi">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <rect width="16" height="20" x="4" y="2" rx="2" />
+
+                            <line x1="8" x2="16" y1="6" y2="6" />
+
+                            <line x1="16" x2="16" y1="14" y2="18" />
+
+                            <path d="M16 10h.01" />
+                            <path d="M12 10h.01" />
+                            <path d="M8 10h.01" />
+                            <path d="M12 14h.01" />
+                            <path d="M8 14h.01" />
+                            <path d="M12 18h.01" />
+                            <path d="M8 18h.01" />
+
+                        </svg>
+
+                        Calculate BMI
+
+                    </button>
+
+
+                    <button type="reset" class="reset">
+                        Reset
+                    </button>
+                     <small></small>
+                </div>
+
+            </form>
+
+
+            <!-- Result -->
+
+            <div class="result">
+
+                <h1>--</h1>
+
+                <h2>Enter your details</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="BMI.js"></script>
+
+</body>
+
+</html>
