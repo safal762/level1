@@ -11,6 +11,7 @@
         valueCheck()
     })
     document.querySelector('.reset').addEventListener('click',reset)
+    
     function valueCheck(){
    let height=document.querySelector('.height') 
         let weight=document.querySelector('.weig')
