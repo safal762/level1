@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+   <div class="main">
+    <label for="inputEvent">enter something</label>
+    <input type="text" id="inputEvent" placeholder="enter something">
+    <h1></h1>
+   </div> 
+</body>
+<script>
+    document.querySelector('input').addEventListener('input',function(e){ // input fires when user changes the value of input select and textarea 
+       document.querySelector('h1').textContent=`${e.target.value}`
+    })
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEnter</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 250px;
+            background-color: rgb(40, 40, 189);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>enter the mouse to change background-color</p>
+    </div>
+</body>
+<script>
+     let colorYellow=document.querySelector('.main')
+    document.querySelector('.main').addEventListener('mouseenter',function(){
+    colorYellow.style.background='yellow'
+    })
+    document.querySelector('.main').addEventListener('mouseleave',function(){
+        colorYellow.style.background='blue'
+    })
+</script>
+</html>

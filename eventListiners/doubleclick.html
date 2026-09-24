@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleClick</title>
+    <style>
+        .main{
+            background-color: rgb(208, 208, 35);
+            height: 160px;
+            width: 180px;
+        }
+        .increase{
+            height: 500px;
+            width: 550px;
+        }
+    </style>         
+</head>
+<body>
+    <div class="main">
+        <p>DoubleClick here to increase its size</p>
+    </div>
+</body>
+<script>
+    document.querySelector('.main').addEventListener('dblclick',function(){
+        // document.querySelector('div').className='increase' // using class name will remove the exesting class
+        document.querySelector('div').classList.add('increase') // it add the new class without removing the new one
+    })
+</script>
+</html>

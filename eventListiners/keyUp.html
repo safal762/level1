@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyUP</title>
+</head>
+
+<body>
+    <div class="main">
+        <label for="KeyUP">enter the key</label>
+        <input type="text" id="KeyUP" placeholder="enter the keys">
+    </div>
+    <h5></h5>
+    <h5 class="second"></h5>
+</body>
+<script>
+    document.querySelector('input').addEventListener('keyup', function (e) { // this event is fired when the key is relesed and works for all the keys
+        let key = e.key
+        let keyCode = e.keyCode
+        let code = e.code
+        let time = e.timeStamp
+        document.querySelector('h5').innerHTML = `key:${key} , keyCode:${keyCode} , code:${code} , timeStamp:${time}`
+        document.querySelector('input').value = ''
+        console.log(e)
+    })
+
+    document.querySelector('input').addEventListener('keydown', function (e) { // this event fires when you click/press the key and works for all the keys 
+        let key = e.key // key down is faster than keyup
+        let keyCode = e.keyCode
+        let code = e.code
+        let time = e.timeStamp
+        document.querySelector('.second').innerHTML = `key:${key} , keyCode:${keyCode} , code:${code} , timeStamp:${time}`
+        document.querySelector('input').value = ''
+    })
+</script>
+
+</html>

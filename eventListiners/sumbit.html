@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumbit</title>
+</head>
+<body>
+    <div class="main">
+        <form action="#" method="post">
+            <label for="useSumbit">enetr something</label>
+        <input type="text" id="useSumbit" placeholder="enter">
+        <button>sumbit</button>
+        <h1></h1>
+        </form>
+    </div>
+</body>
+<script>
+  document.querySelector('form').addEventListener('submit',function(e){ // sumbit event fires when the from is submitted
+   e.preventDefault()
+    document.querySelector('h1').textContent=`TimeStamp:${e.timeStamp}`
+    console.log(e)
+  })
+
+</script>
+</html>
