@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <!-- Link to External CSS -->
+<link rel="stylesheet" href="tip.css">
+</head>
+<body>
+
+  <div class="calculator-card">
+    
+    <!-- LEFT COLUMN: INPUTS -->
+    <div class="input-section">
+      
+      <!-- Header -->
+      <div class="header">
+        <h1>Tip Calculator</h1>
+        <p>Easily split the bill and calculate tips</p>
+      </div>
+
+      <!-- Bill Input -->
+      <div>
+        <label class="label">Bill Amount</label>
+        <div class="input-wrapper">
+          <span class="currency-symbol">$</span>
+          <input type="number"  class="input-field">
+        </div>
+      </div>
+
+      <!-- Select Tip % -->
+      <div>
+        <label class="label">Select Tip %</label>
+        <div class="tip-grid">
+          <button class="btn-tip" value="10">10%</button>
+          <button class="btn-tip active" value="15">15%</button>
+          <button class="btn-tip" value="20">20%</button>
+          <button class="btn-tip" value="25">25%</button>
+          <button class="btn-custom">Custom</button>
+        </div>
+      </div>
+
+      <!-- Number of People -->
+      <div>
+        <label class="label">Number of People</label>
+        <div class="people-control">
+          <button class="btn-counter">-</button>
+          <input type="number"  class="people-input">
+          <button class="btn-counter">+</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN: RESULTS DISPLAY -->
+    <div class="display-section">
+      
+      <div class="results-group">
+        
+        <!-- Tip Amount Per Person -->
+        <div class="result-row">
+          <div>
+            <p class="result-title">TIP AMOUNT</p>
+            <p class="result-subtitle">per person</p>
+          </div>
+          <div class="result-value-green">$9.90</div>
+        </div>
+
+        <!-- Total Per Person -->
+        <div class="result-row">
+          <div>
+            <p class="result-title">TOTAL</p>
+            <p class="result-subtitle">per person</p>
+          </div>
+          <div class="result-value-white">$75.90</div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Total Bill (All) -->
+        <div class="total-bill-row">
+          <p class="total-bill-label">Total Bill (All)</p>
+          <p class="total-bill-value">$75.90</p>
+        </div>
+
+      </div>
+
+      <!-- Reset Button -->
+      <button class="btn-reset">RESET</button>
+
+    </div>
+
+  </div>
+
+</body>
+<script src="tip.js"></script>
+</html>
