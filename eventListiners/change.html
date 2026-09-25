@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changes</title>
+</head>
+<body>
+    <div class="main">
+        <label for="langauges" id="lang">select langaguges</label>
+        <select name="langaugesType" id="langauges">
+            <option value="">>----- Please choose an option<----------</option>
+            <option value="js">Javascript</option>
+            <option value="python">Python</option>
+            <option value="ruby">Ruby</option>
+            <option value="c">c-programming</option>
+            <option value="c++">c++</option>
+        </select>
+        <h1></h1>
+    </div>
+</body>
+<script>
+    document.querySelector('#langauges').addEventListener('change',function(e){
+        document.querySelector('h1').textContent=`${e.target.value}`
+    })
+</script>
+</html>

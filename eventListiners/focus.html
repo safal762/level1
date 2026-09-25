@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+</head>
+<body>
+    <div class="main">
+        <label for="user">UserName</label>
+        <input type="text" id="user">
+        <label for="pass">passWord</label>
+        <input type="text" id="pass">
+
+    </div>
+</body>
+<script>
+    document.querySelector('#user').addEventListener('focus',function(e){ // this event fires when  element has received focus and it doesnot bubbled and it is not cancleable
+      e.target.style.color='green'
+    })
+    document.querySelector('#pass').addEventListener('blur',function(e){ // blur event fires when the focus is lost // opposite of focus
+        e.target.style.background='pink'
+    })
+    </script>
+</html>
